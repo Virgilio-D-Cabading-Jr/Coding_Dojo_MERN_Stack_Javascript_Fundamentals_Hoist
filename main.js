@@ -21,3 +21,6 @@ hello = 'world';
 // let hello = 'worrld';
 // Output:  Syntax error: cannot access hello before initialization
 
+console.log("****************************************");
+console.log("Number 2\n");
+
