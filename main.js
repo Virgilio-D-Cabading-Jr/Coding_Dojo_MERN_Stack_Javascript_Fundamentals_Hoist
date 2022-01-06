@@ -34,10 +34,22 @@ console.log("Number 2\n");
 // Output:  Magnet
 
 // Hoisted Code:
-var needle = 'haystack';
+// var needle = 'haystack';
+// function test(){
+//     var needle = 'magnet';
+//     console.log(needle);
+// }
+// test();
+// Output:  Magnet
+
+// ES6 Code:
+let needle = 'haystack';
 function test(){
-    var needle = 'magnet';
+    let needle = 'magnet';
     console.log(needle);
 }
 test();
 // Output:  Magnet
+
+console.log("\n****************************************");
+console.log("Number 3\n");
