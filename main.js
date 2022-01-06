@@ -86,3 +86,5 @@ console.log(brendan);
 // Output:  only okay
 //          super cool
 
+console.log("\n****************************************");
+console.log("Number 4\n");
