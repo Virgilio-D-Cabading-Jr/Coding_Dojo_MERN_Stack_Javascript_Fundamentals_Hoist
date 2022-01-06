@@ -53,3 +53,25 @@ test();
 
 console.log("\n****************************************");
 console.log("Number 3\n");
+
+// Original Code:
+// var brendan = 'super cool';
+// function print(){
+//     brendan = 'only okay';
+//     console.log(brendan);
+// }
+// console.log(brendan);
+// Output:  super cool
+
+// Hoisted Code:
+// Original Code:
+var brendan = 'super cool';
+function print(){
+    brendan = 'only okay';
+    console.log(brendan);
+}
+print();
+console.log(brendan);
+// Output:  only okay
+//          only okay
+
