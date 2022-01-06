@@ -10,7 +10,7 @@ console.log("Number 1\n");
 // var hello = 'world';
 // Ouput:   undefined
 
-Hoisted Code:
+// Hoisted Code:
 var hello;
 console.log(hello);
 hello = 'world';
@@ -24,3 +24,20 @@ hello = 'world';
 console.log("****************************************");
 console.log("Number 2\n");
 
+// Original Code:
+// var needle = 'haystack';
+// test();
+// function test(){
+//     var needle = 'magnet';
+//     console.log(needle);
+// }
+// Output:  Magnet
+
+// Hoisted Code:
+var needle = 'haystack';
+function test(){
+    var needle = 'magnet';
+    console.log(needle);
+}
+test();
+// Output:  Magnet
