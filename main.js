@@ -65,13 +65,24 @@ console.log("Number 3\n");
 
 // Hoisted Code:
 // Original Code:
-var brendan = 'super cool';
+// var brendan = 'super cool';
+// function print(){
+//     brendan = 'only okay';
+//     console.log(brendan);
+// }
+// print();
+// console.log(brendan);
+// Output:  only okay
+//          only okay
+
+// ES6 Code:
+let brendan = 'super cool';
 function print(){
-    brendan = 'only okay';
+    let brendan = 'only okay';
     console.log(brendan);
 }
 print();
 console.log(brendan);
 // Output:  only okay
-//          only okay
+//          super cool
 
