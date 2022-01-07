@@ -261,5 +261,20 @@ dojo = "san jose";
 console.log(dojo);
 learn();
 console.log(dojo);
+// Output:              san jose
+//                      seattle
+//                      burbank
+//                      san jose
 
 // ES6 Code:
+// function learn() {
+//     dojo = "seattle";
+//     console.log(dojo);
+//     let dojo = "burbank";
+//     console.log(dojo);
+// }
+// dojo = "san jose";
+// console.log(dojo);
+// learn();
+// console.log(dojo);
+// Output:              Syntax Error, cannot access dojo before initialization
