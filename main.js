@@ -125,3 +125,5 @@ eat();
 // eat();
 // Output: Syntax Error: Cannot access 'food' before initialization
 
+console.log("\n****************************************");
+console.log("Number 5\n");
