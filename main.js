@@ -90,20 +90,28 @@ console.log("\n****************************************");
 console.log("Number 4\n");
 
 // Original Code
-var food = 'chicken';
-console.log(food);
-eat();
-function eat(){
-    food = 'half-chicken';
-    console.log(food);
-    var food = 'gone';
-}
+// var food = 'chicken';
+// console.log(food);
+// eat();
+// function eat(){
+//     food = 'half-chicken';
+//     console.log(food);
+//     var food = 'gone';
+// }
 // Output:  chicken
 //          half-chicken
 
-
-
 // Hoisted Code
-
+var food = 'chicken';
+console.log(food);
+function eat(){
+    var food;
+    food = 'half-chicken';
+    console.log(food);
+    food = 'gone';
+}
+eat();
+// Output:  chicken
+//          half-chicken
 
 // ES6 Code
