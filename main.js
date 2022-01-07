@@ -281,3 +281,38 @@ console.log(dojo);
 
 console.log("\n****************************************");
 console.log("Number 8\n");
+
+// Original Code:
+// console.log(makeDojo("Chicago", 65));
+// console.log(makeDojo("Berkeley", 0));
+// function makeDojo(name, students){
+//     const dojo = {};
+//     dojo.name = name;
+//     dojo.students = students;
+//     if(dojo.students > 50){
+//         dojo.hiring = true;
+//     }
+//     else if(dojo.students <= 0){
+//         dojo = "closed for now";
+//     }
+//     return dojo;
+// }
+// output: Syntax Error due to assignent to const
+
+// Hoisted/ corrected Code:
+function makeDojo(name, students){
+    let dojo = {};
+    dojo.name = name;
+    dojo.students = students;
+    if(dojo.students > 50){
+        dojo.hiring = true;
+    }
+    else if(dojo.students <= 0){
+        dojo = "closed for now";
+    }
+    return dojo;
+}
+console.log(makeDojo("Chicago", 65));
+console.log(makeDojo("Berkeley", 0));
+// Output:      { name: 'Chicago', students: 65, hiring: true }
+//              closed for now
