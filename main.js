@@ -177,16 +177,16 @@ console.log("\n****************************************");
 console.log("Number 6\n");
 
 //Original Code:
-console.log(genre);
-var genre = "disco";
-rewind();
-function rewind() {
-    genre = "rock";
-    console.log(genre);
-    var genre = "r&b";
-    console.log(genre);
-}
-console.log(genre);
+// console.log(genre);
+// var genre = "disco";
+// rewind();
+// function rewind() {
+//     genre = "rock";
+//     console.log(genre);
+//     var genre = "r&b";
+//     console.log(genre);
+// }
+// console.log(genre);
 // Predicted Output:    disco
 //                      rock
 //                      r&b
@@ -196,7 +196,34 @@ console.log(genre);
 //                      r&b
 //                      disco
 
-
 // Hoisted Code:
+var genre;
+function rewind() {
+    var genre;
+    genre = "rock";
+    console.log(genre);
+    genre = "r&b";
+    console.log(genre);
+}
+console.log(genre);
+genre = "disco";
+rewind();
+console.log(genre);
+// Output:              undefined
+//                      rock
+//                      r&b
+//                      disco
 
 // ES6 Code:
+// let genre;
+// function rewind() {
+//     genre = "rock";
+//     console.log(genre);
+//     let genre = "r&b";
+//     console.log(genre);
+// }
+// console.log(genre);
+// genre = "disco";
+// rewind();
+// console.log(genre);
+// Output:              Syntac Error, cannot access genre before initialization
