@@ -278,3 +278,6 @@ console.log(dojo);
 // learn();
 // console.log(dojo);
 // Output:              Syntax Error, cannot access dojo before initialization
+
+console.log("\n****************************************");
+console.log("Number 8\n");
