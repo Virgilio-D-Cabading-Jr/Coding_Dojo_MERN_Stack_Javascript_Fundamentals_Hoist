@@ -175,3 +175,21 @@ console.log(food);
 
 console.log("\n****************************************");
 console.log("Number 6\n");
+
+//Original Code:
+console.log(genre);
+var genre = "disco";
+rewind();
+function rewind() {
+    genre = "rock";
+    console.log(genre);
+    var genre = "r&b";
+    console.log(genre);
+}
+console.log(genre);
+// 
+
+
+// Hoisted Code:
+
+// ES6 Code:
