@@ -145,17 +145,30 @@ console.log("Number 5\n");
 //                      chicken
 
 // Hoisted Code:
-var food;
-var mean;
-console.log(food);
+// var food;
+// var mean;
+// console.log(food);
+// mean = function() {
+//     food = "chicken";
+//     console.log(food);
+//     food = "fish";
+//     console.log(food);
+// }
+// console.log(food);
+// Output:              chicken
+//                      chicken
+
+// ES6 Code
+let mean;
 mean = function() {
+    let food;
     food = "chicken";
     console.log(food);
     food = "fish";
     console.log(food);
 }
 console.log(food);
-// Output:              chicken
+console.log(food);
+// Ouput prediction:    Syntax error
+// Actual Output:       chicken
 //                      chicken
-
-// ES6 Code
