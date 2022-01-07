@@ -227,3 +227,6 @@ console.log(genre);
 // rewind();
 // console.log(genre);
 // Output:              Syntac Error, cannot access genre before initialization
+
+console.log("\n****************************************");
+console.log("Number 7\n");
