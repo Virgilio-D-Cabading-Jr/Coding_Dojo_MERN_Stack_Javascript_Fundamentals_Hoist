@@ -187,7 +187,14 @@ function rewind() {
     console.log(genre);
 }
 console.log(genre);
-// 
+// Predicted Output:    disco
+//                      rock
+//                      r&b
+//                      disco
+// Actual Output:       undefined
+//                      rock
+//                      r&b
+//                      disco
 
 
 // Hoisted Code:
