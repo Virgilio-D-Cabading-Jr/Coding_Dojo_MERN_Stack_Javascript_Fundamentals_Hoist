@@ -127,3 +127,35 @@ eat();
 
 console.log("\n****************************************");
 console.log("Number 5\n");
+
+// Original Code: mean();
+// console.log(food);
+// var mean = function() {
+//     food = "chicken";
+//     console.log(food);
+//     var food = "fish";
+//     console.log(food);
+// }
+// console.log(food);
+// Ouput Prediction:    undefined
+//                      chicken
+//                      fish
+//                      fish
+// Actual Output:       chicken
+//                      chicken
+
+// Hoisted Code:
+var food;
+var mean;
+console.log(food);
+mean = function() {
+    food = "chicken";
+    console.log(food);
+    food = "fish";
+    console.log(food);
+}
+console.log(food);
+// Output:              chicken
+//                      chicken
+
+// ES6 Code
