@@ -103,15 +103,25 @@ console.log("Number 4\n");
 
 // Hoisted Code
 var food = 'chicken';
-console.log(food);
 function eat(){
     var food;
     food = 'half-chicken';
     console.log(food);
     food = 'gone';
 }
+console.log(food);
 eat();
 // Output:  chicken
 //          half-chicken
 
 // ES6 Code
+// let food = 'chicken';
+// function eat(){
+//     food = 'half-chicken';
+//     console.log(food);
+//     let food = 'gone';
+// }
+// console.log(food);
+// eat();
+// Output: Syntax Error: Cannot access 'food' before initialization
+
