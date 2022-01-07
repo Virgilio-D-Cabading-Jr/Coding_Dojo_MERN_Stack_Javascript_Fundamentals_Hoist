@@ -230,3 +230,20 @@ console.log(genre);
 
 console.log("\n****************************************");
 console.log("Number 7\n");
+
+// Original Code
+dojo = "san jose";
+console.log(dojo);
+learn();
+function learn() {
+    dojo = "seattle";
+    console.log(dojo);
+    var dojo = "burbank";
+    console.log(dojo);
+}
+console.log(dojo);
+
+
+// Hoisted Code
+
+// ES6 Code:
