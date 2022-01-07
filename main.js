@@ -242,7 +242,11 @@ function learn() {
     console.log(dojo);
 }
 console.log(dojo);
-
+// Predicted Output:    san jose
+//                      seattle
+//                      burbank
+//                      san jose
+// Actual Output is the predited output
 
 // Hoisted Code
 
