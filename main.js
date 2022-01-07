@@ -172,3 +172,6 @@ console.log(food);
 // Ouput prediction:    Syntax error
 // Actual Output:       chicken
 //                      chicken
+
+console.log("\n****************************************");
+console.log("Number 6\n");
